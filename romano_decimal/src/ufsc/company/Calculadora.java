@@ -12,6 +12,7 @@ public class Calculadora {
                 int segundo = converterRomano(romano.charAt(i + 1));
                 if(segundo > primeiro){
                     total += segundo - primeiro;
+                    i++;
                 }
                 else {
                     total += primeiro;
